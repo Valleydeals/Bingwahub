@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1264D8">
+
+    <title>Buy Bundles | BINGWAHUB</title>
+
+    <meta name="description" content="Browse available data, Tunukiwa, minutes and SMS offers on BINGWAHUB.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">B</span>
+                BINGWAHUB
+            </a>
+
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="bundles.html">Buy Bundles</a>
+                <a href="order-status.html">Track Order</a>
+                <a href="login.html">Login</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="categories">
+            <div class="container">
+
+                <h2>Explore Available Offers</h2>
+
+                <p class="section-description">
+                    Choose your preferred category and find an offer.
+                </p>
+
+                <div class="bundle-filters">
+
+                    <button class="filter-btn active"
+                        data-category="all">
+                        All Offers
+                    </button>
+
+                    <button class="filter-btn"
+                        data-category="data">
+                        Data Bundles
+                    </button>
+
+                    <button class="filter-btn"
+                        data-category="tunukiwa">
+                        Tunukiwa
+                    </button>
+
+                    <button class="filter-btn"
+                        data-category="minutes">
+                        Minutes
+                    </button>
+
+                    <button class="filter-btn"
+                        data-category="sms">
+                        SMS
+                    </button>
+
+                </div>
+
+                <div class="bundle-search">
+                    <input
+                        type="search"
+                        id="bundle-search"
+                        placeholder="Search available offers..."
+                        aria-label="Search offers">
+                </div>
+
+                <div id="offers-container">
+
+                    <div class="offers-message">
+                        <div class="loading-spinner"></div>
+
+                        <h3>Loading available offers...</h3>
+
+                        <p>
+                            Please wait while we retrieve the latest offers.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+
+            <h3>BINGWAHUB</h3>
+
+            <p>Your Bundles. Your Connection.</p>
+
+            <p>© 2026 BINGWAHUB. All rights reserved.</p>
+
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="bundles.js"></script>
+
+</body>
+</html>
