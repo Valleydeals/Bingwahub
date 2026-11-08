@@ -88,14 +88,13 @@ app.get("/api/health", (req, res) => {
 // =====================================
 // API ROUTES
 // =====================================
-
+app.use("/api/offers", offersRouter);
 app.get("/api", (req, res) => {
     res.json({
         success: true,
         message: "Welcome to BINGWAHUB API"
     });
 });
-app.use("/api/offers", offersRouter);
 // =====================================
 // 404 HANDLER
 // =====================================
