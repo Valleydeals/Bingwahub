@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1264D8">
+
+    <title>Checkout | BINGWAHUB</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">B</span>
+                BINGWAHUB
+            </a>
+
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="bundles.html">Buy Bundles</a>
+                <a href="order-status.html">Track Order</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="categories">
+
+        <div class="container">
+
+            <h2>Complete Your Order</h2>
+
+            <p class="section-description">
+                Enter your details to continue with your purchase.
+            </p>
+
+            <div class="checkout-card">
+
+                <div class="checkout-summary">
+
+                    <h3>Selected Offer</h3>
+
+                    <p id="checkout-offer-name">
+                        Loading offer...
+                    </p>
+
+                    <h2 id="checkout-offer-price">
+                        --
+                    </h2>
+
+                </div>
+
+                <form id="checkout-form">
+
+                    <div class="form-group">
+
+                        <label for="recipient-phone">
+                            Recipient Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="recipient-phone"
+                            placeholder="0712345678"
+                            maxlength="13"
+                            required
+                        >
+
+                        <small>
+                            Number that will receive the bundle.
+                        </small>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="payer-phone">
+                            M-Pesa Payment Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="payer-phone"
+                            placeholder="0798765432"
+                            maxlength="13"
+                            required
+                        >
+
+                        <small>
+                            Number that will receive the STK Push.
+                        </small>
+
+                    </div>
+
+                    <div id="checkout-message"
+                         class="checkout-message"
+                         role="status">
+                    </div>
+
+                    <button
+                        type="submit"
+                        id="checkout-submit"
+                        class="primary-button checkout-button">
+
+                        Continue to M-Pesa Payment
+
+                    </button>
+
+                </form>
+
+                <p class="payment-note">
+                    Payments are securely processed through AutoBundles.
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <h3>BINGWAHUB</h3>
+            <p>Your Bundles. Your Connection.</p>
+            <p>© 2026 BINGWAHUB. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="checkout.js"></script>
+
+</body>
+</html>
