@@ -48,3 +48,22 @@ function normalizePhone(phone) {
         ? number
         : null;
 }
+/* =====================================
+   SHARED MESSAGE DISPLAY
+===================================== */
+
+function showMessage(elementId, message, type = "info") {
+    const element = document.getElementById(elementId);
+
+    if (!element) return;
+
+    element.textContent = message;
+
+    const colors = {
+        success: "#15803D",
+        error: "#DC2626",
+        info: "#526176"
+    };
+
+    element.style.color = colors[type] || colors.info;
+}
