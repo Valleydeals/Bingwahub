@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1264D8">
+
+    <title>Track Order | BINGWAHUB</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">B</span>
+                BINGWAHUB
+            </a>
+
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="bundles.html">Buy Bundles</a>
+                <a href="order-status.html">Track Order</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="categories">
+
+        <div class="container">
+
+            <h2>Track Your Order</h2>
+
+            <p class="section-description">
+                Enter your order reference to check your transaction.
+            </p>
+
+            <div class="checkout-card">
+
+                <form id="tracking-form">
+
+                    <div class="form-group">
+
+                        <label for="order-reference">
+                            Order Reference
+                        </label>
+
+                        <input
+                            type="text"
+                            id="order-reference"
+                            placeholder="Enter your order reference"
+                            required
+                        >
+
+                    </div>
+
+                    <div id="tracking-message"
+                         class="checkout-message"
+                         role="status">
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="primary-button checkout-button">
+                        Track Order
+                    </button>
+
+                </form>
+
+                <div id="tracking-result" hidden>
+
+                    <h3>Order Information</h3>
+
+                    <p>Reference: <strong id="result-reference">--</strong></p>
+
+                    <p>Payment: <strong id="result-payment">--</strong></p>
+
+                    <p>Delivery: <strong id="result-delivery">--</strong></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <h3>BINGWAHUB</h3>
+            <p>Your Bundles. Your Connection.</p>
+            <p>© 2026 BINGWAHUB. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
