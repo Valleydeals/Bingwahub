@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1264D8">
+
+    <title>Login | BINGWAHUB</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">B</span>
+                BINGWAHUB
+            </a>
+
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="bundles.html">Buy Bundles</a>
+                <a href="register.html">Register</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="categories">
+
+        <div class="container">
+
+            <div class="checkout-card">
+
+                <h2>Welcome Back!</h2>
+
+                <p class="section-description">
+                    Login to your BINGWAHUB account.
+                </p>
+
+                <form id="login-form">
+
+                    <div class="form-group">
+                        <label for="login-email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="login-email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+
+                        <input
+                            type="password"
+                            id="login-password"
+                            placeholder="Enter your password"
+                            required
+                        >
+                    </div>
+
+                    <div id="login-message"
+                         class="checkout-message"
+                         role="status">
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="primary-button checkout-button">
+                        Login
+                    </button>
+
+                </form>
+
+                <p class="payment-note">
+                    Don't have an account?
+                    <a href="register.html">Create Account</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <h3>BINGWAHUB</h3>
+            <p>Your Bundles. Your Connection.</p>
+            <p>© 2026 BINGWAHUB. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
