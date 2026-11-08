@@ -95,7 +95,7 @@ app.get("/api", (req, res) => {
         message: "Welcome to BINGWAHUB API"
     });
 });
-
+app.use("/api/offers", offersRouter);
 // =====================================
 // 404 HANDLER
 // =====================================
